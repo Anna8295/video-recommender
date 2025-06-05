@@ -1,0 +1,91 @@
+.overlay-card {
+    position: relative; 
+    min-width: 470px;
+    height: 270px;
+    overflow: hidden; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.overlay-card:hover {
+    transform: scale(1.05); 
+}
+
+.overlay-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+.overlay-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.details {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #a1a1b2;
+}
+
+.category-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.overlay-title {
+    margin: 10px 0 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.save-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.save-icon:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.save-icon img {
+    width: 15px;
+    height: 15px;
+}
+
+@media (max-width: 480px) {
+    .overlay-card { 
+        min-width: 240px;
+        height: 140px; 
+    }
+    
+    .details {
+        font-size: 10px;
+    }
+
+    .overlay-title {
+        margin: 4px 0 0;
+        font-size: 18px;
+    }
+
+}

@@ -1,0 +1,41 @@
+.search-container {
+    display: flex;             
+    align-items: center;        
+    gap: 10px;                  
+    width: 100%;               
+}
+
+.custom-input {
+    border: none;
+    background-color: transparent;
+    padding: 8px 12px;
+    font-size: 28px;
+    width: 90%;
+  }
+
+  .custom-input:focus {
+    outline: none;
+  }
+  
+  .custom-input:placeholder-shown {
+    color: white; 
+  }
+
+  .custom-input:focus, .custom-input.typing {
+    border-bottom: 2px solid #5A698F;
+    color: #ffffff;
+  }
+
+
+  @media (max-width: 768px) {
+    .custom-input {
+        font-size: 18px;
+        width: 88%;
+      }    
+  }
+
+  @media (max-width: 480px) {
+    .custom-input {
+        width: 75%;
+      }    
+  }
